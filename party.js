@@ -1,6 +1,13 @@
+var taipei,result
+fetch("taipei.json")
+  .then(response => response.json())
+  .then(function(json) => {taipei = json});
 
-var result = d3.json("result.json");
-var taipei = d3.json("taipei");
+
+fetch("result.json")
+  .then(response => response.json())
+  .then(function(json) => {result = json});
+
 
 var parties = {};
 
