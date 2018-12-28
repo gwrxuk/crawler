@@ -17,6 +17,7 @@ for(var i in taipei.objects.village.geometries){
     var v = taipei.objects.village.geometries[i].properties.V_Name;
     var name = c+t+v;
     var area = c+t;
+  console.log(name);
     taipei.objects.village.geometries[i].properties.party = result[name]["party"];
     var party = result[name]["party"];
      
